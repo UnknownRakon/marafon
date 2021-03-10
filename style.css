@@ -19,6 +19,15 @@ h2{
     line-height: 124%;
     color: #533738;
 }
+h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #533738;
+}
 p{
     font-family: Montserrat;
     font-style: normal;
@@ -33,6 +42,7 @@ p{
     flex-direction: column;
     width: 1400px;
     margin: 0 auto;
+    background-color:#EFE6E4;
 }
 header{
     flex: 1;
@@ -41,7 +51,7 @@ header{
     width: 100%;
     display: grid;
     grid-template-rows: 100px 1fr;
-    grid-template-columns: 100px 100px 550px 550px 100px;
+    grid-template-columns: 1fr 1fr 5.5fr 5.5fr 1fr;
     row-gap: 5%;
 }
 .header-div--top{
@@ -131,4 +141,54 @@ header{
 }
 .div-order--button:focus{
     outline: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.main-section--about{
+    display: grid;
+    grid-template-rows: 12fr 53fr 23fr;
+    grid-template-columns: 1.8fr 5fr 5.2fr 2fr;
+    margin-top: 20px;
+    grid-row-gap: 20px;
+}
+.main-section--about h3{
+    grid-row: 1/2;
+    grid-column: 1/5;
+    text-align: center;
+    margin: auto 0;
+}
+.main-section--about img{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.main-section--about article{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+}
+.section-aboutUs--numbers{
+    grid-row: 3/4;
+    grid-column: 1/6;
+    background-color: #8D7370;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-aboutUs--numbers p{
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+span.number{
+    font-size: 50px;
+    line-height: 124%;
+    font-weight: 400;
 }
