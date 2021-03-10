@@ -192,3 +192,47 @@ span.number{
     line-height: 124%;
     font-weight: 400;
 }
+.main-section--works{
+    display: grid;
+    grid-template-columns: 90px 488px 184px 508px 90px;
+    grid-template-rows: 100px repeat(2, 450px) 150px;
+    grid-gap: 20px;
+}
+.main-section--works h3{
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.works-image--one{
+    grid-row:2/3;
+    grid-column: 2/3;
+}
+.works-image--two{
+    grid-row:2/3;
+    grid-column: 3/5;
+}
+.works-image--three{
+    grid-row:3/4;
+    grid-column: 2/4;
+}
+.works-image--four{
+    grid-row:3/4;
+    grid-column: 4/5;
+}
+.works-button--all{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #533738;
+    background:none;
+    border: none;
+    grid-row: 4/5;
+    grid-column: 2/5;
+}
+.works-button--all:focus{
+    outline: none;
+}
