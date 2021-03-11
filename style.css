@@ -263,3 +263,118 @@ span.number{
 .works-button--all:focus{
     outline: none;
 }
+.main-section--team{
+    width: 100%;
+    background-color: #E2C4BA;
+}
+.container-team{
+    width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr repeat(3, 5fr) 1.2fr;
+    grid-template-rows: 150px 1fr;
+    grid-column-gap:50px;
+}
+.container-team h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0;
+    grid-row: 1/2;
+    grid-column: 1/6;
+}
+.container-team img{
+    width: 100%;
+}
+.container-team p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167%;
+    color: #533738;
+    margin-top: 10px;
+    }
+.team-card--one{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.team-card--two{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.team-card--three{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.main-section--howWork{
+    width: 100%;
+    background-color: #E2C4BA;
+}
+.container-howWork{
+    width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 70fr) 1fr;
+    grid-template-rows: 150px 100px 200px;
+    grid-column-gap:5px;
+}
+.container-howWork h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1/2;
+    grid-column: 1/7;
+}
+.div-howWork{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #8D7370;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    color: #FFFFFF;
+    grid-row:2/3;
+    justify-self: center;
+}
+.div-howWork--one{
+    grid-column: 2/3;
+}
+.div-howWork--two{
+    grid-column: 3/4;
+}
+.div-howWork--three{
+    grid-column: 4/5;
+}
+.div-howWork--four{
+    grid-column: 5/6;
+}
+.p-howWork{
+    grid-row:3/4;
+    justify-self: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: #533738;
+}
+.p-howWork--one{
+    grid-column: 2/3;
+}
+.p-howWork--two{
+    grid-column: 3/4;
+}
+.p-howWork--three{
+    grid-column: 4/5;
+}
+.p-howWork--four{
+    grid-column: 5/6;
+}
