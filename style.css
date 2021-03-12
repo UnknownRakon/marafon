@@ -526,13 +526,21 @@ span.number{
     border: none;
     border-bottom: 1px solid #ffffff;
     border-radius: 0;
+    padding: 4px 0;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 167%;
     color: #F6EDE9;
-    padding: 4px 0;
+}
+.request-form form input[type='text']::placeholder{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167%;
+    color: #F6EDE9;
 }
 .request-form form input[type='text']:focus{
     outline: none;
