@@ -378,3 +378,59 @@ span.number{
 .p-howWork--four{
     grid-column: 5/6;
 }
+.main-section--reviews{
+    width: 100%;
+}
+.container-reviews{
+    width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 137px 72px repeat(2, 1fr) 72px 137px;
+    grid-template-rows: 150px 630px 100px;
+    grid-column-gap:25px;
+}
+.container-reviews h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1/2;
+    grid-column: 1/7;
+}
+.reviews-arrows{
+    width:72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #CC8B86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row:2/3;
+    justify-self: center;
+    border: none;
+} 
+.reviews-arrows:focus{
+    outline: none;
+}
+.left{
+    grid-column: 2/3;
+    align-self: center;
+}
+.right{
+    grid-column: 5/6;
+    align-self: center;
+}
+.reviews-text{
+    grid-column: 3/4;
+    grid-row:2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 90px 0;
+}
+.reviews-image{
+    grid-column: 4/5;
+    grid-row:2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
