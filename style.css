@@ -434,3 +434,98 @@ span.number{
     flex-direction: column;
     justify-content: space-around;
 }
+.main-section--request{
+    width: 100%;
+    background-color: #8D7370;
+}
+.container-request{
+    width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 176px repeat(2, 1fr) 96px;
+    grid-template-rows: 1fr;
+    grid-column-gap:20px;
+}
+.request-form{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: repeat(2, 50px) 24px 60px 44px 1fr; 
+}
+.request-form h3{
+    color: #FFFFFF;
+    grid-row: 2/3;
+}
+.request-form p{
+    color: #FFFFFF;
+    opacity: 0.6;
+    grid-row: 4/5;
+}
+.request-form form{
+    grid-row: 6/7;
+    display: grid;
+    grid-template-rows: repeat(3, 35px) 31px 74px;
+}
+.request-form form input[type='text']{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167%;
+    color: #F6EDE9;
+    padding: 4px 0;
+}
+.request-form form input[type='text']:focus{
+    outline: none;
+}
+.request-form form input:nth-child(1){
+    grid-row:1/2;
+}
+.request-form form input:nth-child(2){
+    grid-row:3/4;
+}
+.request-form form input:nth-child(3){
+    grid-row:5/6;
+}
+.request-form form input[type='submit']{
+    border: none;
+    width: 310px;
+    background: #CC8B86;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #533738;
+}
+.request-form form input[type='submit']:focus{
+    outline: none;
+}
+.container-request img{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+footer{
+    width: 100%;
+}
+.container-footer{
+    width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100px 161px 32px 500px 320px 170px 100px;
+    grid-template-rows: 104px;
+    align-items: center;
+}
+.footer-p--number{
+    grid-column: 2/3;
+}
+.footer-p--address{
+    grid-column: 4/5;
+}
+.footer-p--owner{
+    grid-column: 6/7;
+}
