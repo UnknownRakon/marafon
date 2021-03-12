@@ -235,6 +235,61 @@ span.number{
 .works-image--one{
     grid-row:1/2;
     grid-column: 1/2;
+    display: grid;
+    z-index: 1000;
+}
+.works-image--one img{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.image-one--hover{
+    background: rgba(100, 72, 69, 0.8);
+    display: grid;
+    grid-template-rows: 80px 100px 150px 122px;
+    grid-template-columns: 35px 418px 35px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    opacity: 0;
+}
+.works-image--one:hover .image-one--hover{
+    animation-name: hover;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+@keyframes hover {
+    0% {
+      opacity: 0;
+    }
+    30% {
+        opacity: 0.3;
+      }
+    50% {
+      opacity: 0.5;
+    }
+    80% {
+        opacity: 0.8;
+      }
+    100% {
+      opacity: 1;
+    }
+  }
+.image-one--hover h4{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.image-one--hover p{
+    color: #FFFFFF;
+    grid-row: 3/4;
+    grid-column: 2/3;
 }
 .works-image--two{
     grid-row:1/2;
