@@ -35,7 +35,6 @@ p{
     font-size: 18px;
     line-height: 167%;
     color: #533738;
-
 }
 body{
     background-color: #EFE6E4;
@@ -249,32 +248,13 @@ span.number{
     grid-template-columns: 35px 418px 35px;
     grid-row: 1/2;
     grid-column: 1/2;
+    transition-property: opacity;
+    transition: all ease 1s;
     opacity: 0;
 }
 .works-image--one:hover .image-one--hover{
-    animation-name: hover;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
-    -webkit-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
+    opacity: 1;
 }
-@keyframes hover {
-    0% {
-      opacity: 0;
-    }
-    30% {
-        opacity: 0.3;
-      }
-    50% {
-      opacity: 0.5;
-    }
-    80% {
-        opacity: 0.8;
-      }
-    100% {
-      opacity: 1;
-    }
-  }
 .image-one--hover h4{
     font-family: Montserrat;
     font-style: normal;
@@ -585,6 +565,13 @@ footer{
 }
 .footer-p--number{
     grid-column: 2/3;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167%;
+    color: #533738;
+    text-decoration: none;
 }
 .footer-p--address{
     grid-column: 4/5;
