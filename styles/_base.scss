@@ -3,13 +3,22 @@
     padding: 0;
 }
 $brown:#533738;
+$white:#F6EDE9;
 $button-color:#CC8B86;
+$input:#e08079;
 @mixin text {
     font-family: Montserrat;
     font-style: normal;
-    color: $brown;
     text-decoration: none;
     font-weight: normal;
+}
+@mixin text-brown {
+    @include text;
+    color: $brown;
+}
+@mixin text-white {
+    @include text;
+    color: $white;
 }
 @mixin container {
     width: 1400px;
